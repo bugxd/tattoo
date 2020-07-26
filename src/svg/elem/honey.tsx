@@ -24,6 +24,7 @@ const Honey = (props: IHoneyProps) => {
       strokeOpacity={props.strokeOpacity}
       strokeLinecap={props.strokeLinecap}
       style={{backgroundColor:"#000"}}
+      filter={props.filter}
     />
   )
 }

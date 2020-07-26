@@ -24,14 +24,17 @@ export interface IStyleProps {
 
   /** stroke-width */
   strokeWidth?: number;
+
+  /** filter */
+  filter?: string;
 }
 
 const SVG = (props: ISvgProps) => {
   return (
     <svg
       xmlns={"http://www.w3.org/2000/svg"}
-      width={window.innerWidth}
-      height={window.innerHeight}
+      width={window.innerWidth-20}
+      height={window.innerHeight-20}
     >
       {props.children}
       Sorry, your browser does not support inline SVG.
